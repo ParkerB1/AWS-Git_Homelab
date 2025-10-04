@@ -14,8 +14,8 @@ jobs:
     - name: Checkout source
       uses: actions/checkout@v3
 
-    - name: Sync to S3
-      runs: aws s3 sync ./ s3://${{ secrets.S3_BUCKET }} --delete --cache-control max-age=31536000,public
+    - name: Sync to S3 with cache control
+      run: aws s3 sync ./ s3://${{ secrets.S3_BUCKET }} --delete --cache-control max-age=31536000,public
       with:
         args: --delete
       env:
