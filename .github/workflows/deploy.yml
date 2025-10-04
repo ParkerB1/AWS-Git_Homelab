@@ -16,8 +16,6 @@ jobs:
 
     - name: Sync to S3 with cache control
       run: aws s3 sync ./ s3://${{ secrets.S3_BUCKET }} --delete --cache-control max-age=31536000,public
-      with:
-        args: --delete
       env:
         AWS_S3_BUCKET: ${{ secrets.S3_BUCKET }}
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
