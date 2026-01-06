@@ -1,6 +1,8 @@
 <!DOCTYPE html>
   <html lang="en">
     <head> 
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>My Cloud Website</title>
       <link rel="stylesheet" href="styles.css?v=1">
       <link rel="apple-touch-icon" sizes="180x180" href="/favicon-images/apple-touch-icon.png">
@@ -8,12 +10,99 @@
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-images/favicon-16x16.png">
       <link rel="manifest" href="/favicon-images/site.webmanifest">
     </head>
-    
+
     <body>
-      <h1>
-        This website is being hosted on an AWS S3 bucket and automatically 
-        deployed using GitHub Actions whenever changes are pushed to the repository
-      </h1>
+
+    <!-- Header -->
+    <header class="hero">
+      <h1>Parker Blackwell</h1>
+      <div class="buttons">
+        <a href="resume.pdf" target="_blank" class="btn">View Resume</a>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a Computer Information Systems graduate with hands-on experience deploying AWS cloud infrastructure, implementing CI/CD 
+        pipelines, and monitoring production-style systems. Additionally, I have hands-on experience managing
+      </p>
+      <p>
+        I also built a virtualized Active Directory home lab using VirtualBox, where I deployed a domain 
+        controller, created and managed users, groups, and organizational units (OUs), and configured Group Policy Objects (GPOs). 
+      </p>
+      <p>
+        In addition to technical projects, I have experience providing customer support and troubleshooting hardware, software, and system issues in a fast-paced environment. This experience strengthened my problem-solving, communication, and documentation skills, which I now apply to cloud infrastructure and IT systems projects.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>AWS Static Website with CloudFront & CI/CD</h3>
+        <ul>
+          <li>Hosted on S3 with CloudFront CDN and HTTPS</li>
+          <li>Automated deployments using GitHub Actions and IAM</li>
+          <li>Monitored with CloudWatch, SNS alerts, and CloudFront access logs</li>
+          <li>Troubleshot recurring 4xx errors using access logs</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/ParkerB1/AWS-Git_Homelab" target="_blank">GitHub Repo</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>Active Directory HomeLab</h3>
+        <ul>
+          <li>Built a virtualized Active Directory environment using VirtualBox</li>
+          <li>Deployed a domain controller and configured users, groups, and Organizational Units (OUs)</li>
+          <li>Implemented Group Policy Objects (GPOs) to manage policies and permissions</li>
+          <li>Simulated enterprise identity and access management workflows and administrative tasks</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/ParkerB1/AD-homelab" target="_blank">GitHub Repo</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>Python Web Scraping & Text Analysis</h3>
+        <ul>
+          <li>Built a Python script to scrape and analyze texts from Project Gutenberg</li>
+          <li>Performed tokenization, word frequency analysis, and sentence/word count comparisons</li>
+          <li>Used Python libraries: requests, BeautifulSoup, and NLTK for data extraction and analysis</li>
+          <li>Practiced automation, data processing, and text analytics workflows</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/ParkerB1/Python_Webscraping_Project" target="_blank">GitHub Repo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <span>Cloud: AWS (S3, CloudFront, Route 53, ACM, CloudWatch, SNS, IAM)</span>
+        <span>Automation: GitHub, GitHub Actions, Git, CI/CD</span>
+        <span>Systems: Active Directory, Windows Server, Microsoft Dynamics 365, Office 365</span>
+        <span>Programming: Python, HTML, CSS, JavaScript</span>
+        <span>Monitoring: Metrics, Alarms, Access Logs</span>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:youremail@example.com">park3rblackwell7@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">www.linkedin.com/in/parker-b-7010b323b</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">https://github.com/ParkerB1</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Website hosted on AWS S3 & delivered via CloudFront</p>
+    </footer>
+
     </body>
     
   </html>
