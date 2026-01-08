@@ -25,7 +25,8 @@ jobs:
       run: |
         aws s3 sync ./ s3://${{ secrets.S3_BUCKET }} \
           --exclude "*.html" \
-          --cache-control "public, max-age=31536000, immutable"
+          --cache-control "public, max-age=31536000, immutable" \
+          --delete
     
     - name: Sync HTML (no cache)
       run: |
